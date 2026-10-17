@@ -1,0 +1,6 @@
+base_config: ../train.yaml
+experiment_name: mvip_random_ntok4_seed42
+
+vlm:
+  init_mode: random
+  n_soft_tokens: 4

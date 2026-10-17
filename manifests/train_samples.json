@@ -1,0 +1,965 @@
+{
+  "num_items": 96,
+  "items": [
+    {
+      "sample_id": "pika:pika-8770ab90-fa0b-5cba-883a-5798bb37c8eb",
+      "source": "pika",
+      "source_video_id": "pika-8770ab90-fa0b-5cba-883a-5798bb37c8eb",
+      "segment_id": null,
+      "input_video": "data/VidProM/pika_videos/pika_videos_all/pika-8770ab90-fa0b-5cba-883a-5798bb37c8eb.mp4",
+      "chunk_start_sec": null,
+      "chunk_end_sec": null,
+      "chunk_duration_sec": 0.0
+    },
+    {
+      "sample_id": "vc2:vc-d1182667-de6d-5ee1-bcef-30de15e1f75b",
+      "source": "vc2",
+      "source_video_id": "vc-d1182667-de6d-5ee1-bcef-30de15e1f75b",
+      "segment_id": null,
+      "input_video": "data/VidProM/vc2_videos/vc2_videos_all/vc-d1182667-de6d-5ee1-bcef-30de15e1f75b.mp4",
+      "chunk_start_sec": null,
+      "chunk_end_sec": null,
+      "chunk_duration_sec": 0.0
+    },
+    {
+      "sample_id": "activitynet:yTJCrP0HqEE:seg_0011",
+      "source": "activitynet",
+      "source_video_id": "yTJCrP0HqEE",
+      "segment_id": "seg_0011",
+      "input_video": "data/ActivityNet/videos/yTJCrP0HqEE.mp4",
+      "chunk_start_sec": 143.79,
+      "chunk_end_sec": 147.79,
+      "chunk_duration_sec": 4.0
+    },
+    {
+      "sample_id": "activitynet:6lYTHj9vImo:seg_0009:chunk_02",
+      "source": "activitynet",
+      "source_video_id": "6lYTHj9vImo",
+      "segment_id": "seg_0009_chunk_02",
+      "input_video": "data/ActivityNet/videos/6lYTHj9vImo.mp4",
+      "chunk_start_sec": 58.53,
+      "chunk_end_sec": 60.07,
+      "chunk_duration_sec": 1.5399999999999991
+    },
+    {
+      "sample_id": "pika:pika-23d79360-d01f-5e96-a0f1-a21d7175562f",
+      "source": "pika",
+      "source_video_id": "pika-23d79360-d01f-5e96-a0f1-a21d7175562f",
+      "segment_id": null,
+      "input_video": "data/VidProM/pika_videos/pika_videos_all/pika-23d79360-d01f-5e96-a0f1-a21d7175562f.mp4",
+      "chunk_start_sec": null,
+      "chunk_end_sec": null,
+      "chunk_duration_sec": 0.0
+    },
+    {
+      "sample_id": "ms:ms-31490fd4-aaf6-54c1-87ae-b29bee35eb5d",
+      "source": "ms",
+      "source_video_id": "ms-31490fd4-aaf6-54c1-87ae-b29bee35eb5d",
+      "segment_id": null,
+      "input_video": "data/VidProM/ms_videos/ms_videos_all/ms-31490fd4-aaf6-54c1-87ae-b29bee35eb5d.mp4",
+      "chunk_start_sec": null,
+      "chunk_end_sec": null,
+      "chunk_duration_sec": 0.0
+    },
+    {
+      "sample_id": "wan:00006_c80c659e-0215-5e90-88e8-0cbb40b05420",
+      "source": "wan",
+      "source_video_id": "00006_c80c659e-0215-5e90-88e8-0cbb40b05420",
+      "segment_id": null,
+      "input_video": "data/VidProM/wan_121f/00006_c80c659e-0215-5e90-88e8-0cbb40b05420/seed_42.mp4",
+      "chunk_start_sec": null,
+      "chunk_end_sec": null,
+      "chunk_duration_sec": 0.0
+    },
+    {
+      "sample_id": "wan:00088_3bb5effb-fc26-521e-9fe2-a82f902cf365",
+      "source": "wan",
+      "source_video_id": "00088_3bb5effb-fc26-521e-9fe2-a82f902cf365",
+      "segment_id": null,
+      "input_video": "data/VidProM/wan_121f/00088_3bb5effb-fc26-521e-9fe2-a82f902cf365/seed_42.mp4",
+      "chunk_start_sec": null,
+      "chunk_end_sec": null,
+      "chunk_duration_sec": 0.0
+    },
+    {
+      "sample_id": "activitynet:eRQAjBwhDXk:seg_0009",
+      "source": "activitynet",
+      "source_video_id": "eRQAjBwhDXk",
+      "segment_id": "seg_0009",
+      "input_video": "data/ActivityNet/videos/eRQAjBwhDXk.mp4",
+      "chunk_start_sec": 16.55,
+      "chunk_end_sec": 17.38,
+      "chunk_duration_sec": 0.8299999999999983
+    },
+    {
+      "sample_id": "vc2:vc-3b36e95b-5a3d-5c5d-9c7a-be2d88f0b9e5",
+      "source": "vc2",
+      "source_video_id": "vc-3b36e95b-5a3d-5c5d-9c7a-be2d88f0b9e5",
+      "segment_id": null,
+      "input_video": "data/VidProM/vc2_videos/vc2_videos_all/vc-3b36e95b-5a3d-5c5d-9c7a-be2d88f0b9e5.mp4",
+      "chunk_start_sec": null,
+      "chunk_end_sec": null,
+      "chunk_duration_sec": 0.0
+    },
+    {
+      "sample_id": "vc2:vc-e1d23618-a6e4-5076-b3ec-b53258453f92",
+      "source": "vc2",
+      "source_video_id": "vc-e1d23618-a6e4-5076-b3ec-b53258453f92",
+      "segment_id": null,
+      "input_video": "data/VidProM/vc2_videos/vc2_videos_all/vc-e1d23618-a6e4-5076-b3ec-b53258453f92.mp4",
+      "chunk_start_sec": null,
+      "chunk_end_sec": null,
+      "chunk_duration_sec": 0.0
+    },
+    {
+      "sample_id": "wan:00017_83efc268-67ea-5b85-a6a8-4566f1b0f80e",
+      "source": "wan",
+      "source_video_id": "00017_83efc268-67ea-5b85-a6a8-4566f1b0f80e",
+      "segment_id": null,
+      "input_video": "data/VidProM/wan_121f/00017_83efc268-67ea-5b85-a6a8-4566f1b0f80e/seed_42.mp4",
+      "chunk_start_sec": null,
+      "chunk_end_sec": null,
+      "chunk_duration_sec": 0.0
+    },
+    {
+      "sample_id": "activitynet:HxJnPUqF9i8:seg_0018:chunk_01",
+      "source": "activitynet",
+      "source_video_id": "HxJnPUqF9i8",
+      "segment_id": "seg_0018_chunk_01",
+      "input_video": "data/ActivityNet/videos/HxJnPUqF9i8.mp4",
+      "chunk_start_sec": 110.52,
+      "chunk_end_sec": 115.52,
+      "chunk_duration_sec": 5.0
+    },
+    {
+      "sample_id": "activitynet:RULNhPrXnfA:seg_0003",
+      "source": "activitynet",
+      "source_video_id": "RULNhPrXnfA",
+      "segment_id": "seg_0003",
+      "input_video": "data/ActivityNet/videos/RULNhPrXnfA.mp4",
+      "chunk_start_sec": 5.93,
+      "chunk_end_sec": 7.63,
+      "chunk_duration_sec": 1.7000000000000002
+    },
+    {
+      "sample_id": "ms:ms-6bf1c780-a964-58ca-a4b9-77318d5f879f",
+      "source": "ms",
+      "source_video_id": "ms-6bf1c780-a964-58ca-a4b9-77318d5f879f",
+      "segment_id": null,
+      "input_video": "data/VidProM/ms_videos/ms_videos_all/ms-6bf1c780-a964-58ca-a4b9-77318d5f879f.mp4",
+      "chunk_start_sec": null,
+      "chunk_end_sec": null,
+      "chunk_duration_sec": 0.0
+    },
+    {
+      "sample_id": "ms:ms-7d3dd9ab-4201-5973-81d2-be3828348cc1",
+      "source": "ms",
+      "source_video_id": "ms-7d3dd9ab-4201-5973-81d2-be3828348cc1",
+      "segment_id": null,
+      "input_video": "data/VidProM/ms_videos/ms_videos_all/ms-7d3dd9ab-4201-5973-81d2-be3828348cc1.mp4",
+      "chunk_start_sec": null,
+      "chunk_end_sec": null,
+      "chunk_duration_sec": 0.0
+    },
+    {
+      "sample_id": "vc2:vc-2f83e8f5-af3a-5369-8641-74e2d24bba78",
+      "source": "vc2",
+      "source_video_id": "vc-2f83e8f5-af3a-5369-8641-74e2d24bba78",
+      "segment_id": null,
+      "input_video": "data/VidProM/vc2_videos/vc2_videos_all/vc-2f83e8f5-af3a-5369-8641-74e2d24bba78.mp4",
+      "chunk_start_sec": null,
+      "chunk_end_sec": null,
+      "chunk_duration_sec": 0.0
+    },
+    {
+      "sample_id": "msrvtt:video9418:seg_0000:chunk_04",
+      "source": "msrvtt",
+      "source_video_id": "video9418",
+      "segment_id": "seg_0000_chunk_04",
+      "input_video": "data/MSR-VTT/videos/video9418.mp4",
+      "chunk_start_sec": 20.0,
+      "chunk_end_sec": 25.0,
+      "chunk_duration_sec": 5.0
+    },
+    {
+      "sample_id": "ms:ms-f13a5b53-a506-55ab-8fc8-cd899e6d68f9",
+      "source": "ms",
+      "source_video_id": "ms-f13a5b53-a506-55ab-8fc8-cd899e6d68f9",
+      "segment_id": null,
+      "input_video": "data/VidProM/ms_videos/ms_videos_all/ms-f13a5b53-a506-55ab-8fc8-cd899e6d68f9.mp4",
+      "chunk_start_sec": null,
+      "chunk_end_sec": null,
+      "chunk_duration_sec": 0.0
+    },
+    {
+      "sample_id": "activitynet:-vDMeHr1ZfI:seg_0016:chunk_01",
+      "source": "activitynet",
+      "source_video_id": "-vDMeHr1ZfI",
+      "segment_id": "seg_0016_chunk_01",
+      "input_video": "data/ActivityNet/videos/-vDMeHr1ZfI.mp4",
+      "chunk_start_sec": 122.32,
+      "chunk_end_sec": 125.76,
+      "chunk_duration_sec": 3.440000000000012
+    },
+    {
+      "sample_id": "vc2:vc-7a20714a-d5b0-5f84-a14b-0f3ddeae013d",
+      "source": "vc2",
+      "source_video_id": "vc-7a20714a-d5b0-5f84-a14b-0f3ddeae013d",
+      "segment_id": null,
+      "input_video": "data/VidProM/vc2_videos/vc2_videos_all/vc-7a20714a-d5b0-5f84-a14b-0f3ddeae013d.mp4",
+      "chunk_start_sec": null,
+      "chunk_end_sec": null,
+      "chunk_duration_sec": 0.0
+    },
+    {
+      "sample_id": "vc2:vc-68aa6ef4-052b-5bed-a5d2-18d7dde99cac",
+      "source": "vc2",
+      "source_video_id": "vc-68aa6ef4-052b-5bed-a5d2-18d7dde99cac",
+      "segment_id": null,
+      "input_video": "data/VidProM/vc2_videos/vc2_videos_all/vc-68aa6ef4-052b-5bed-a5d2-18d7dde99cac.mp4",
+      "chunk_start_sec": null,
+      "chunk_end_sec": null,
+      "chunk_duration_sec": 0.0
+    },
+    {
+      "sample_id": "vc2:vc-c25e7ab7-8e70-52fc-92f7-3bb48cfdb5bd",
+      "source": "vc2",
+      "source_video_id": "vc-c25e7ab7-8e70-52fc-92f7-3bb48cfdb5bd",
+      "segment_id": null,
+      "input_video": "data/VidProM/vc2_videos/vc2_videos_all/vc-c25e7ab7-8e70-52fc-92f7-3bb48cfdb5bd.mp4",
+      "chunk_start_sec": null,
+      "chunk_end_sec": null,
+      "chunk_duration_sec": 0.0
+    },
+    {
+      "sample_id": "activitynet:lHy_OZ8GygM:seg_0054",
+      "source": "activitynet",
+      "source_video_id": "lHy_OZ8GygM",
+      "segment_id": "seg_0054",
+      "input_video": "data/ActivityNet/videos/lHy_OZ8GygM.mp4",
+      "chunk_start_sec": 98.36,
+      "chunk_end_sec": 100.16,
+      "chunk_duration_sec": 1.7999999999999972
+    },
+    {
+      "sample_id": "activitynet:aOzMA2rpWEw:seg_0013:chunk_11",
+      "source": "activitynet",
+      "source_video_id": "aOzMA2rpWEw",
+      "segment_id": "seg_0013_chunk_11",
+      "input_video": "data/ActivityNet/videos/aOzMA2rpWEw.mp4",
+      "chunk_start_sec": 310.72,
+      "chunk_end_sec": 315.72,
+      "chunk_duration_sec": 5.0
+    },
+    {
+      "sample_id": "wan:00025_35cd4891-7ce4-5644-b839-715caed24ace",
+      "source": "wan",
+      "source_video_id": "00025_35cd4891-7ce4-5644-b839-715caed24ace",
+      "segment_id": null,
+      "input_video": "data/VidProM/wan_121f/00025_35cd4891-7ce4-5644-b839-715caed24ace/seed_42.mp4",
+      "chunk_start_sec": null,
+      "chunk_end_sec": null,
+      "chunk_duration_sec": 0.0
+    },
+    {
+      "sample_id": "wan:00080_8632ba97-cb47-5a23-88cb-c482dad16d33",
+      "source": "wan",
+      "source_video_id": "00080_8632ba97-cb47-5a23-88cb-c482dad16d33",
+      "segment_id": null,
+      "input_video": "data/VidProM/wan_121f/00080_8632ba97-cb47-5a23-88cb-c482dad16d33/seed_42.mp4",
+      "chunk_start_sec": null,
+      "chunk_end_sec": null,
+      "chunk_duration_sec": 0.0
+    },
+    {
+      "sample_id": "activitynet:grroBKRxAMY:seg_0005",
+      "source": "activitynet",
+      "source_video_id": "grroBKRxAMY",
+      "segment_id": "seg_0005",
+      "input_video": "data/ActivityNet/videos/grroBKRxAMY.mp4",
+      "chunk_start_sec": 44.58,
+      "chunk_end_sec": 47.25,
+      "chunk_duration_sec": 2.6700000000000017
+    },
+    {
+      "sample_id": "activitynet:pZ8QqpYu-H8:seg_0004:chunk_28",
+      "source": "activitynet",
+      "source_video_id": "pZ8QqpYu-H8",
+      "segment_id": "seg_0004_chunk_28",
+      "input_video": "data/ActivityNet/videos/pZ8QqpYu-H8.mp4",
+      "chunk_start_sec": 168.72,
+      "chunk_end_sec": 173.72,
+      "chunk_duration_sec": 5.0
+    },
+    {
+      "sample_id": "ms:ms-0fbdfe59-0647-55ab-9462-3cd201f3a12b",
+      "source": "ms",
+      "source_video_id": "ms-0fbdfe59-0647-55ab-9462-3cd201f3a12b",
+      "segment_id": null,
+      "input_video": "data/VidProM/ms_videos/ms_videos_all/ms-0fbdfe59-0647-55ab-9462-3cd201f3a12b.mp4",
+      "chunk_start_sec": null,
+      "chunk_end_sec": null,
+      "chunk_duration_sec": 0.0
+    },
+    {
+      "sample_id": "ms:ms-ed99542d-ec2d-5810-80c4-f8b59f56ddd9",
+      "source": "ms",
+      "source_video_id": "ms-ed99542d-ec2d-5810-80c4-f8b59f56ddd9",
+      "segment_id": null,
+      "input_video": "data/VidProM/ms_videos/ms_videos_all/ms-ed99542d-ec2d-5810-80c4-f8b59f56ddd9.mp4",
+      "chunk_start_sec": null,
+      "chunk_end_sec": null,
+      "chunk_duration_sec": 0.0
+    },
+    {
+      "sample_id": "msrvtt:video1822:seg_0000:chunk_01",
+      "source": "msrvtt",
+      "source_video_id": "video1822",
+      "segment_id": "seg_0000_chunk_01",
+      "input_video": "data/MSR-VTT/videos/video1822.mp4",
+      "chunk_start_sec": 5.0,
+      "chunk_end_sec": 10.0,
+      "chunk_duration_sec": 5.0
+    },
+    {
+      "sample_id": "activitynet:3S5RoKVsAys:seg_0033",
+      "source": "activitynet",
+      "source_video_id": "3S5RoKVsAys",
+      "segment_id": "seg_0033",
+      "input_video": "data/ActivityNet/videos/3S5RoKVsAys.mp4",
+      "chunk_start_sec": 135.4,
+      "chunk_end_sec": 136.74,
+      "chunk_duration_sec": 1.3400000000000034
+    },
+    {
+      "sample_id": "vc2:vc-9873f89f-ec2b-5f26-8e36-a4d8bf093d93",
+      "source": "vc2",
+      "source_video_id": "vc-9873f89f-ec2b-5f26-8e36-a4d8bf093d93",
+      "segment_id": null,
+      "input_video": "data/VidProM/vc2_videos/vc2_videos_all/vc-9873f89f-ec2b-5f26-8e36-a4d8bf093d93.mp4",
+      "chunk_start_sec": null,
+      "chunk_end_sec": null,
+      "chunk_duration_sec": 0.0
+    },
+    {
+      "sample_id": "activitynet:WBkqGBFsdgI:seg_0001:chunk_05",
+      "source": "activitynet",
+      "source_video_id": "WBkqGBFsdgI",
+      "segment_id": "seg_0001_chunk_05",
+      "input_video": "data/ActivityNet/videos/WBkqGBFsdgI.mp4",
+      "chunk_start_sec": 31.04,
+      "chunk_end_sec": 36.04,
+      "chunk_duration_sec": 5.0
+    },
+    {
+      "sample_id": "wan:00070_a6e3c6a3-1b26-5067-8d8e-346927558ba6",
+      "source": "wan",
+      "source_video_id": "00070_a6e3c6a3-1b26-5067-8d8e-346927558ba6",
+      "segment_id": null,
+      "input_video": "data/VidProM/wan_121f/00070_a6e3c6a3-1b26-5067-8d8e-346927558ba6/seed_42.mp4",
+      "chunk_start_sec": null,
+      "chunk_end_sec": null,
+      "chunk_duration_sec": 0.0
+    },
+    {
+      "sample_id": "msrvtt:video8819:seg_0000:chunk_00",
+      "source": "msrvtt",
+      "source_video_id": "video8819",
+      "segment_id": "seg_0000_chunk_00",
+      "input_video": "data/MSR-VTT/videos/video8819.mp4",
+      "chunk_start_sec": 0.0,
+      "chunk_end_sec": 5.0,
+      "chunk_duration_sec": 5.0
+    },
+    {
+      "sample_id": "wan:00028_3d5f4683-9ac5-56e3-9f7b-450fb7b7d409",
+      "source": "wan",
+      "source_video_id": "00028_3d5f4683-9ac5-56e3-9f7b-450fb7b7d409",
+      "segment_id": null,
+      "input_video": "data/VidProM/wan_121f/00028_3d5f4683-9ac5-56e3-9f7b-450fb7b7d409/seed_42.mp4",
+      "chunk_start_sec": null,
+      "chunk_end_sec": null,
+      "chunk_duration_sec": 0.0
+    },
+    {
+      "sample_id": "vc2:vc-bea34b32-7d28-59e1-a50a-6f27fde5f389",
+      "source": "vc2",
+      "source_video_id": "vc-bea34b32-7d28-59e1-a50a-6f27fde5f389",
+      "segment_id": null,
+      "input_video": "data/VidProM/vc2_videos/vc2_videos_all/vc-bea34b32-7d28-59e1-a50a-6f27fde5f389.mp4",
+      "chunk_start_sec": null,
+      "chunk_end_sec": null,
+      "chunk_duration_sec": 0.0
+    },
+    {
+      "sample_id": "vc2:vc-d011eb3c-8aec-5578-98d8-2b35d7587961",
+      "source": "vc2",
+      "source_video_id": "vc-d011eb3c-8aec-5578-98d8-2b35d7587961",
+      "segment_id": null,
+      "input_video": "data/VidProM/vc2_videos/vc2_videos_all/vc-d011eb3c-8aec-5578-98d8-2b35d7587961.mp4",
+      "chunk_start_sec": null,
+      "chunk_end_sec": null,
+      "chunk_duration_sec": 0.0
+    },
+    {
+      "sample_id": "msrvtt:video2642:seg_0004",
+      "source": "msrvtt",
+      "source_video_id": "video2642",
+      "segment_id": "seg_0004",
+      "input_video": "data/MSR-VTT/videos/video2642.mp4",
+      "chunk_start_sec": 6.406,
+      "chunk_end_sec": 10.01,
+      "chunk_duration_sec": 3.604
+    },
+    {
+      "sample_id": "pika:pika-dfe2a82e-1f5f-5502-93e4-9e2c74dfa063",
+      "source": "pika",
+      "source_video_id": "pika-dfe2a82e-1f5f-5502-93e4-9e2c74dfa063",
+      "segment_id": null,
+      "input_video": "data/VidProM/pika_videos/pika_videos_all/pika-dfe2a82e-1f5f-5502-93e4-9e2c74dfa063.mp4",
+      "chunk_start_sec": null,
+      "chunk_end_sec": null,
+      "chunk_duration_sec": 0.0
+    },
+    {
+      "sample_id": "msrvtt:video3103:seg_0000:chunk_01",
+      "source": "msrvtt",
+      "source_video_id": "video3103",
+      "segment_id": "seg_0000_chunk_01",
+      "input_video": "data/MSR-VTT/videos/video3103.mp4",
+      "chunk_start_sec": 5.0,
+      "chunk_end_sec": 10.0,
+      "chunk_duration_sec": 5.0
+    },
+    {
+      "sample_id": "ms:ms-501761c8-5db5-55c5-805a-e84ea3dc2a5b",
+      "source": "ms",
+      "source_video_id": "ms-501761c8-5db5-55c5-805a-e84ea3dc2a5b",
+      "segment_id": null,
+      "input_video": "data/VidProM/ms_videos/ms_videos_all/ms-501761c8-5db5-55c5-805a-e84ea3dc2a5b.mp4",
+      "chunk_start_sec": null,
+      "chunk_end_sec": null,
+      "chunk_duration_sec": 0.0
+    },
+    {
+      "sample_id": "pika:pika-3f6b1fa5-819b-5a2e-8296-d26c6a4d9657",
+      "source": "pika",
+      "source_video_id": "pika-3f6b1fa5-819b-5a2e-8296-d26c6a4d9657",
+      "segment_id": null,
+      "input_video": "data/VidProM/pika_videos/pika_videos_all/pika-3f6b1fa5-819b-5a2e-8296-d26c6a4d9657.mp4",
+      "chunk_start_sec": null,
+      "chunk_end_sec": null,
+      "chunk_duration_sec": 0.0
+    },
+    {
+      "sample_id": "wan:00063_f25b7ddd-60e5-55d5-b20a-8d759d9b3278",
+      "source": "wan",
+      "source_video_id": "00063_f25b7ddd-60e5-55d5-b20a-8d759d9b3278",
+      "segment_id": null,
+      "input_video": "data/VidProM/wan_121f/00063_f25b7ddd-60e5-55d5-b20a-8d759d9b3278/seed_42.mp4",
+      "chunk_start_sec": null,
+      "chunk_end_sec": null,
+      "chunk_duration_sec": 0.0
+    },
+    {
+      "sample_id": "msrvtt:video9166:seg_0001",
+      "source": "msrvtt",
+      "source_video_id": "video9166",
+      "segment_id": "seg_0001",
+      "input_video": "data/MSR-VTT/videos/video9166.mp4",
+      "chunk_start_sec": 1.404,
+      "chunk_end_sec": 2.273,
+      "chunk_duration_sec": 0.8690000000000002
+    },
+    {
+      "sample_id": "pika:pika-2958c823-ded3-57ea-ba8f-9e49e54d984e",
+      "source": "pika",
+      "source_video_id": "pika-2958c823-ded3-57ea-ba8f-9e49e54d984e",
+      "segment_id": null,
+      "input_video": "data/VidProM/pika_videos/pika_videos_all/pika-2958c823-ded3-57ea-ba8f-9e49e54d984e.mp4",
+      "chunk_start_sec": null,
+      "chunk_end_sec": null,
+      "chunk_duration_sec": 0.0
+    },
+    {
+      "sample_id": "activitynet:W3fKTlm1BPs:seg_0006:chunk_02",
+      "source": "activitynet",
+      "source_video_id": "W3fKTlm1BPs",
+      "segment_id": "seg_0006_chunk_02",
+      "input_video": "data/ActivityNet/videos/W3fKTlm1BPs.mp4",
+      "chunk_start_sec": 39.83,
+      "chunk_end_sec": 43.88,
+      "chunk_duration_sec": 4.050000000000004
+    },
+    {
+      "sample_id": "ms:ms-501c656b-1a5a-5104-b4df-ad377aed4cf1",
+      "source": "ms",
+      "source_video_id": "ms-501c656b-1a5a-5104-b4df-ad377aed4cf1",
+      "segment_id": null,
+      "input_video": "data/VidProM/ms_videos/ms_videos_all/ms-501c656b-1a5a-5104-b4df-ad377aed4cf1.mp4",
+      "chunk_start_sec": null,
+      "chunk_end_sec": null,
+      "chunk_duration_sec": 0.0
+    },
+    {
+      "sample_id": "ms:ms-259d56db-2552-5788-8c73-2b3296fa18c3",
+      "source": "ms",
+      "source_video_id": "ms-259d56db-2552-5788-8c73-2b3296fa18c3",
+      "segment_id": null,
+      "input_video": "data/VidProM/ms_videos/ms_videos_all/ms-259d56db-2552-5788-8c73-2b3296fa18c3.mp4",
+      "chunk_start_sec": null,
+      "chunk_end_sec": null,
+      "chunk_duration_sec": 0.0
+    },
+    {
+      "sample_id": "msrvtt:video3064:seg_0002",
+      "source": "msrvtt",
+      "source_video_id": "video3064",
+      "segment_id": "seg_0002",
+      "input_video": "data/MSR-VTT/videos/video3064.mp4",
+      "chunk_start_sec": 3.237,
+      "chunk_end_sec": 4.371,
+      "chunk_duration_sec": 1.1340000000000003
+    },
+    {
+      "sample_id": "wan:00061_09b66a62-22e9-56a3-95dd-71ca663be38a",
+      "source": "wan",
+      "source_video_id": "00061_09b66a62-22e9-56a3-95dd-71ca663be38a",
+      "segment_id": null,
+      "input_video": "data/VidProM/wan_121f/00061_09b66a62-22e9-56a3-95dd-71ca663be38a/seed_42.mp4",
+      "chunk_start_sec": null,
+      "chunk_end_sec": null,
+      "chunk_duration_sec": 0.0
+    },
+    {
+      "sample_id": "vc2:vc-3ac72205-670d-56c4-b836-0d2068a7da72",
+      "source": "vc2",
+      "source_video_id": "vc-3ac72205-670d-56c4-b836-0d2068a7da72",
+      "segment_id": null,
+      "input_video": "data/VidProM/vc2_videos/vc2_videos_all/vc-3ac72205-670d-56c4-b836-0d2068a7da72.mp4",
+      "chunk_start_sec": null,
+      "chunk_end_sec": null,
+      "chunk_duration_sec": 0.0
+    },
+    {
+      "sample_id": "msrvtt:video4391:seg_0000:chunk_02",
+      "source": "msrvtt",
+      "source_video_id": "video4391",
+      "segment_id": "seg_0000_chunk_02",
+      "input_video": "data/MSR-VTT/videos/video4391.mp4",
+      "chunk_start_sec": 10.0,
+      "chunk_end_sec": 15.0,
+      "chunk_duration_sec": 5.0
+    },
+    {
+      "sample_id": "pika:pika-0fe393d4-3bf2-52fb-97f5-2879c1730073",
+      "source": "pika",
+      "source_video_id": "pika-0fe393d4-3bf2-52fb-97f5-2879c1730073",
+      "segment_id": null,
+      "input_video": "data/VidProM/pika_videos/pika_videos_all/pika-0fe393d4-3bf2-52fb-97f5-2879c1730073.mp4",
+      "chunk_start_sec": null,
+      "chunk_end_sec": null,
+      "chunk_duration_sec": 0.0
+    },
+    {
+      "sample_id": "pika:pika-203028c4-05c2-599d-b65f-c9f40592296c",
+      "source": "pika",
+      "source_video_id": "pika-203028c4-05c2-599d-b65f-c9f40592296c",
+      "segment_id": null,
+      "input_video": "data/VidProM/pika_videos/pika_videos_all/pika-203028c4-05c2-599d-b65f-c9f40592296c.mp4",
+      "chunk_start_sec": null,
+      "chunk_end_sec": null,
+      "chunk_duration_sec": 0.0
+    },
+    {
+      "sample_id": "vc2:vc-056151f7-cdce-5cd2-9b85-8b802f6f8c5b",
+      "source": "vc2",
+      "source_video_id": "vc-056151f7-cdce-5cd2-9b85-8b802f6f8c5b",
+      "segment_id": null,
+      "input_video": "data/VidProM/vc2_videos/vc2_videos_all/vc-056151f7-cdce-5cd2-9b85-8b802f6f8c5b.mp4",
+      "chunk_start_sec": null,
+      "chunk_end_sec": null,
+      "chunk_duration_sec": 0.0
+    },
+    {
+      "sample_id": "activitynet:RVYINuYPY6o:seg_0005:chunk_03",
+      "source": "activitynet",
+      "source_video_id": "RVYINuYPY6o",
+      "segment_id": "seg_0005_chunk_03",
+      "input_video": "data/ActivityNet/videos/RVYINuYPY6o.mp4",
+      "chunk_start_sec": 220.3,
+      "chunk_end_sec": 225.3,
+      "chunk_duration_sec": 5.0
+    },
+    {
+      "sample_id": "ms:ms-75b67895-3305-5276-93ba-200c6ae7e2da",
+      "source": "ms",
+      "source_video_id": "ms-75b67895-3305-5276-93ba-200c6ae7e2da",
+      "segment_id": null,
+      "input_video": "data/VidProM/ms_videos/ms_videos_all/ms-75b67895-3305-5276-93ba-200c6ae7e2da.mp4",
+      "chunk_start_sec": null,
+      "chunk_end_sec": null,
+      "chunk_duration_sec": 0.0
+    },
+    {
+      "sample_id": "msrvtt:video1836:seg_0000:chunk_01",
+      "source": "msrvtt",
+      "source_video_id": "video1836",
+      "segment_id": "seg_0000_chunk_01",
+      "input_video": "data/MSR-VTT/videos/video1836.mp4",
+      "chunk_start_sec": 5.0,
+      "chunk_end_sec": 10.0,
+      "chunk_duration_sec": 5.0
+    },
+    {
+      "sample_id": "ms:ms-54696537-d7bb-58ed-9d67-ba9a25593ec3",
+      "source": "ms",
+      "source_video_id": "ms-54696537-d7bb-58ed-9d67-ba9a25593ec3",
+      "segment_id": null,
+      "input_video": "data/VidProM/ms_videos/ms_videos_all/ms-54696537-d7bb-58ed-9d67-ba9a25593ec3.mp4",
+      "chunk_start_sec": null,
+      "chunk_end_sec": null,
+      "chunk_duration_sec": 0.0
+    },
+    {
+      "sample_id": "wan:00007_61c802f7-57a8-5408-affa-f3240d992e3b",
+      "source": "wan",
+      "source_video_id": "00007_61c802f7-57a8-5408-affa-f3240d992e3b",
+      "segment_id": null,
+      "input_video": "data/VidProM/wan_121f/00007_61c802f7-57a8-5408-affa-f3240d992e3b/seed_42.mp4",
+      "chunk_start_sec": null,
+      "chunk_end_sec": null,
+      "chunk_duration_sec": 0.0
+    },
+    {
+      "sample_id": "wan:00078_2b03e97b-779b-5947-ae89-257ad5b516e3",
+      "source": "wan",
+      "source_video_id": "00078_2b03e97b-779b-5947-ae89-257ad5b516e3",
+      "segment_id": null,
+      "input_video": "data/VidProM/wan_121f/00078_2b03e97b-779b-5947-ae89-257ad5b516e3/seed_42.mp4",
+      "chunk_start_sec": null,
+      "chunk_end_sec": null,
+      "chunk_duration_sec": 0.0
+    },
+    {
+      "sample_id": "pika:pika-f4eed9ee-5ec3-5a42-b374-5d142d7ce4f6",
+      "source": "pika",
+      "source_video_id": "pika-f4eed9ee-5ec3-5a42-b374-5d142d7ce4f6",
+      "segment_id": null,
+      "input_video": "data/VidProM/pika_videos/pika_videos_all/pika-f4eed9ee-5ec3-5a42-b374-5d142d7ce4f6.mp4",
+      "chunk_start_sec": null,
+      "chunk_end_sec": null,
+      "chunk_duration_sec": 0.0
+    },
+    {
+      "sample_id": "ms:ms-2fddb849-a496-53d4-9c1a-a848a82fa796",
+      "source": "ms",
+      "source_video_id": "ms-2fddb849-a496-53d4-9c1a-a848a82fa796",
+      "segment_id": null,
+      "input_video": "data/VidProM/ms_videos/ms_videos_all/ms-2fddb849-a496-53d4-9c1a-a848a82fa796.mp4",
+      "chunk_start_sec": null,
+      "chunk_end_sec": null,
+      "chunk_duration_sec": 0.0
+    },
+    {
+      "sample_id": "msrvtt:video4358:seg_0001:chunk_00",
+      "source": "msrvtt",
+      "source_video_id": "video4358",
+      "segment_id": "seg_0001_chunk_00",
+      "input_video": "data/MSR-VTT/videos/video4358.mp4",
+      "chunk_start_sec": 0.7,
+      "chunk_end_sec": 5.7,
+      "chunk_duration_sec": 5.0
+    },
+    {
+      "sample_id": "msrvtt:video6625:seg_0000:chunk_01",
+      "source": "msrvtt",
+      "source_video_id": "video6625",
+      "segment_id": "seg_0000_chunk_01",
+      "input_video": "data/MSR-VTT/videos/video6625.mp4",
+      "chunk_start_sec": 5.0,
+      "chunk_end_sec": 10.0,
+      "chunk_duration_sec": 5.0
+    },
+    {
+      "sample_id": "vc2:vc-e33f5d48-3963-569d-a2e9-789badb68da8",
+      "source": "vc2",
+      "source_video_id": "vc-e33f5d48-3963-569d-a2e9-789badb68da8",
+      "segment_id": null,
+      "input_video": "data/VidProM/vc2_videos/vc2_videos_all/vc-e33f5d48-3963-569d-a2e9-789badb68da8.mp4",
+      "chunk_start_sec": null,
+      "chunk_end_sec": null,
+      "chunk_duration_sec": 0.0
+    },
+    {
+      "sample_id": "activitynet:EOradtej9GU:seg_0007:chunk_02",
+      "source": "activitynet",
+      "source_video_id": "EOradtej9GU",
+      "segment_id": "seg_0007_chunk_02",
+      "input_video": "data/ActivityNet/videos/EOradtej9GU.mp4",
+      "chunk_start_sec": 108.47,
+      "chunk_end_sec": 113.47,
+      "chunk_duration_sec": 5.0
+    },
+    {
+      "sample_id": "wan:00054_d2c9076b-8e51-5ea7-91c3-f393c9f40d50",
+      "source": "wan",
+      "source_video_id": "00054_d2c9076b-8e51-5ea7-91c3-f393c9f40d50",
+      "segment_id": null,
+      "input_video": "data/VidProM/wan_121f/00054_d2c9076b-8e51-5ea7-91c3-f393c9f40d50/seed_42.mp4",
+      "chunk_start_sec": null,
+      "chunk_end_sec": null,
+      "chunk_duration_sec": 0.0
+    },
+    {
+      "sample_id": "pika:pika-a1c5761d-0efd-57bc-a7b8-39f0bbceebd9",
+      "source": "pika",
+      "source_video_id": "pika-a1c5761d-0efd-57bc-a7b8-39f0bbceebd9",
+      "segment_id": null,
+      "input_video": "data/VidProM/pika_videos/pika_videos_all/pika-a1c5761d-0efd-57bc-a7b8-39f0bbceebd9.mp4",
+      "chunk_start_sec": null,
+      "chunk_end_sec": null,
+      "chunk_duration_sec": 0.0
+    },
+    {
+      "sample_id": "vc2:vc-e4606edc-ed19-542f-83b4-cadbbed3b4f5",
+      "source": "vc2",
+      "source_video_id": "vc-e4606edc-ed19-542f-83b4-cadbbed3b4f5",
+      "segment_id": null,
+      "input_video": "data/VidProM/vc2_videos/vc2_videos_all/vc-e4606edc-ed19-542f-83b4-cadbbed3b4f5.mp4",
+      "chunk_start_sec": null,
+      "chunk_end_sec": null,
+      "chunk_duration_sec": 0.0
+    },
+    {
+      "sample_id": "wan:00033_a49c66f9-0966-5048-bf2c-700307a4fa34",
+      "source": "wan",
+      "source_video_id": "00033_a49c66f9-0966-5048-bf2c-700307a4fa34",
+      "segment_id": null,
+      "input_video": "data/VidProM/wan_121f/00033_a49c66f9-0966-5048-bf2c-700307a4fa34/seed_42.mp4",
+      "chunk_start_sec": null,
+      "chunk_end_sec": null,
+      "chunk_duration_sec": 0.0
+    },
+    {
+      "sample_id": "pika:pika-a6c77dc1-ccf8-5783-8d15-3b5458d71b0b",
+      "source": "pika",
+      "source_video_id": "pika-a6c77dc1-ccf8-5783-8d15-3b5458d71b0b",
+      "segment_id": null,
+      "input_video": "data/VidProM/pika_videos/pika_videos_all/pika-a6c77dc1-ccf8-5783-8d15-3b5458d71b0b.mp4",
+      "chunk_start_sec": null,
+      "chunk_end_sec": null,
+      "chunk_duration_sec": 0.0
+    },
+    {
+      "sample_id": "ms:ms-3633d589-ebc5-5ad2-b9ab-d12f69a76585",
+      "source": "ms",
+      "source_video_id": "ms-3633d589-ebc5-5ad2-b9ab-d12f69a76585",
+      "segment_id": null,
+      "input_video": "data/VidProM/ms_videos/ms_videos_all/ms-3633d589-ebc5-5ad2-b9ab-d12f69a76585.mp4",
+      "chunk_start_sec": null,
+      "chunk_end_sec": null,
+      "chunk_duration_sec": 0.0
+    },
+    {
+      "sample_id": "msrvtt:video7969:seg_0001",
+      "source": "msrvtt",
+      "source_video_id": "video7969",
+      "segment_id": "seg_0001",
+      "input_video": "data/MSR-VTT/videos/video7969.mp4",
+      "chunk_start_sec": 2.336,
+      "chunk_end_sec": 5.672,
+      "chunk_duration_sec": 3.336
+    },
+    {
+      "sample_id": "ms:ms-8b99dfe4-ce4a-52d5-be30-3c9dc74b0ba5",
+      "source": "ms",
+      "source_video_id": "ms-8b99dfe4-ce4a-52d5-be30-3c9dc74b0ba5",
+      "segment_id": null,
+      "input_video": "data/VidProM/ms_videos/ms_videos_all/ms-8b99dfe4-ce4a-52d5-be30-3c9dc74b0ba5.mp4",
+      "chunk_start_sec": null,
+      "chunk_end_sec": null,
+      "chunk_duration_sec": 0.0
+    },
+    {
+      "sample_id": "ms:ms-bdd858c7-eaec-5229-928b-35a1941f00c1",
+      "source": "ms",
+      "source_video_id": "ms-bdd858c7-eaec-5229-928b-35a1941f00c1",
+      "segment_id": null,
+      "input_video": "data/VidProM/ms_videos/ms_videos_all/ms-bdd858c7-eaec-5229-928b-35a1941f00c1.mp4",
+      "chunk_start_sec": null,
+      "chunk_end_sec": null,
+      "chunk_duration_sec": 0.0
+    },
+    {
+      "sample_id": "msrvtt:video5961:seg_0002",
+      "source": "msrvtt",
+      "source_video_id": "video5961",
+      "segment_id": "seg_0002",
+      "input_video": "data/MSR-VTT/videos/video5961.mp4",
+      "chunk_start_sec": 4.92,
+      "chunk_end_sec": 7.04,
+      "chunk_duration_sec": 2.12
+    },
+    {
+      "sample_id": "activitynet:5yfDyVVkPuU:seg_0011:chunk_00",
+      "source": "activitynet",
+      "source_video_id": "5yfDyVVkPuU",
+      "segment_id": "seg_0011_chunk_00",
+      "input_video": "data/ActivityNet/videos/5yfDyVVkPuU.mp4",
+      "chunk_start_sec": 54.92,
+      "chunk_end_sec": 59.92,
+      "chunk_duration_sec": 5.0
+    },
+    {
+      "sample_id": "vc2:vc-5dfdc795-a1c0-59a9-87f1-fa9465d933ab",
+      "source": "vc2",
+      "source_video_id": "vc-5dfdc795-a1c0-59a9-87f1-fa9465d933ab",
+      "segment_id": null,
+      "input_video": "data/VidProM/vc2_videos/vc2_videos_all/vc-5dfdc795-a1c0-59a9-87f1-fa9465d933ab.mp4",
+      "chunk_start_sec": null,
+      "chunk_end_sec": null,
+      "chunk_duration_sec": 0.0
+    },
+    {
+      "sample_id": "vc2:vc-f2ca38a1-5ab8-568c-bc0b-90025084a6d4",
+      "source": "vc2",
+      "source_video_id": "vc-f2ca38a1-5ab8-568c-bc0b-90025084a6d4",
+      "segment_id": null,
+      "input_video": "data/VidProM/vc2_videos/vc2_videos_all/vc-f2ca38a1-5ab8-568c-bc0b-90025084a6d4.mp4",
+      "chunk_start_sec": null,
+      "chunk_end_sec": null,
+      "chunk_duration_sec": 0.0
+    },
+    {
+      "sample_id": "activitynet:1fF1OQtpctg:seg_0030:chunk_00",
+      "source": "activitynet",
+      "source_video_id": "1fF1OQtpctg",
+      "segment_id": "seg_0030_chunk_00",
+      "input_video": "data/ActivityNet/videos/1fF1OQtpctg.mp4",
+      "chunk_start_sec": 155.67,
+      "chunk_end_sec": 160.67,
+      "chunk_duration_sec": 5.0
+    },
+    {
+      "sample_id": "pika:pika-b09a027d-95f3-554a-ade4-32e6cd5dcf1a",
+      "source": "pika",
+      "source_video_id": "pika-b09a027d-95f3-554a-ade4-32e6cd5dcf1a",
+      "segment_id": null,
+      "input_video": "data/VidProM/pika_videos/pika_videos_all/pika-b09a027d-95f3-554a-ade4-32e6cd5dcf1a.mp4",
+      "chunk_start_sec": null,
+      "chunk_end_sec": null,
+      "chunk_duration_sec": 0.0
+    },
+    {
+      "sample_id": "ms:ms-96303cab-bdf2-57f9-9dee-dbe5745febab",
+      "source": "ms",
+      "source_video_id": "ms-96303cab-bdf2-57f9-9dee-dbe5745febab",
+      "segment_id": null,
+      "input_video": "data/VidProM/ms_videos/ms_videos_all/ms-96303cab-bdf2-57f9-9dee-dbe5745febab.mp4",
+      "chunk_start_sec": null,
+      "chunk_end_sec": null,
+      "chunk_duration_sec": 0.0
+    },
+    {
+      "sample_id": "activitynet:lHy_OZ8GygM:seg_0014",
+      "source": "activitynet",
+      "source_video_id": "lHy_OZ8GygM",
+      "segment_id": "seg_0014",
+      "input_video": "data/ActivityNet/videos/lHy_OZ8GygM.mp4",
+      "chunk_start_sec": 34.16,
+      "chunk_end_sec": 35.76,
+      "chunk_duration_sec": 1.6000000000000014
+    },
+    {
+      "sample_id": "pika:pika-db6e58ff-c1ad-57c0-a49f-342accb7dd60",
+      "source": "pika",
+      "source_video_id": "pika-db6e58ff-c1ad-57c0-a49f-342accb7dd60",
+      "segment_id": null,
+      "input_video": "data/VidProM/pika_videos/pika_videos_all/pika-db6e58ff-c1ad-57c0-a49f-342accb7dd60.mp4",
+      "chunk_start_sec": null,
+      "chunk_end_sec": null,
+      "chunk_duration_sec": 0.0
+    },
+    {
+      "sample_id": "ms:ms-699118dd-61b2-5739-b68d-2d731ec3a110",
+      "source": "ms",
+      "source_video_id": "ms-699118dd-61b2-5739-b68d-2d731ec3a110",
+      "segment_id": null,
+      "input_video": "data/VidProM/ms_videos/ms_videos_all/ms-699118dd-61b2-5739-b68d-2d731ec3a110.mp4",
+      "chunk_start_sec": null,
+      "chunk_end_sec": null,
+      "chunk_duration_sec": 0.0
+    },
+    {
+      "sample_id": "pika:pika-c9d342ce-331c-5c54-bb4d-6beaf4717516",
+      "source": "pika",
+      "source_video_id": "pika-c9d342ce-331c-5c54-bb4d-6beaf4717516",
+      "segment_id": null,
+      "input_video": "data/VidProM/pika_videos/pika_videos_all/pika-c9d342ce-331c-5c54-bb4d-6beaf4717516.mp4",
+      "chunk_start_sec": null,
+      "chunk_end_sec": null,
+      "chunk_duration_sec": 0.0
+    },
+    {
+      "sample_id": "pika:pika-8f0509b6-0d9b-5baa-963e-c468d38a7763",
+      "source": "pika",
+      "source_video_id": "pika-8f0509b6-0d9b-5baa-963e-c468d38a7763",
+      "segment_id": null,
+      "input_video": "data/VidProM/pika_videos/pika_videos_all/pika-8f0509b6-0d9b-5baa-963e-c468d38a7763.mp4",
+      "chunk_start_sec": null,
+      "chunk_end_sec": null,
+      "chunk_duration_sec": 0.0
+    },
+    {
+      "sample_id": "wan:00083_22b0105a-d420-50ea-9fe6-a02bf83427ff",
+      "source": "wan",
+      "source_video_id": "00083_22b0105a-d420-50ea-9fe6-a02bf83427ff",
+      "segment_id": null,
+      "input_video": "data/VidProM/wan_121f/00083_22b0105a-d420-50ea-9fe6-a02bf83427ff/seed_42.mp4",
+      "chunk_start_sec": null,
+      "chunk_end_sec": null,
+      "chunk_duration_sec": 0.0
+    },
+    {
+      "sample_id": "pika:pika-7a87bc12-2f8d-5c67-a149-6b4ebd84862f",
+      "source": "pika",
+      "source_video_id": "pika-7a87bc12-2f8d-5c67-a149-6b4ebd84862f",
+      "segment_id": null,
+      "input_video": "data/VidProM/pika_videos/pika_videos_all/pika-7a87bc12-2f8d-5c67-a149-6b4ebd84862f.mp4",
+      "chunk_start_sec": null,
+      "chunk_end_sec": null,
+      "chunk_duration_sec": 0.0
+    },
+    {
+      "sample_id": "vc2:vc-0a4deb34-6ab1-5839-844e-9341dec40f55",
+      "source": "vc2",
+      "source_video_id": "vc-0a4deb34-6ab1-5839-844e-9341dec40f55",
+      "segment_id": null,
+      "input_video": "data/VidProM/vc2_videos/vc2_videos_all/vc-0a4deb34-6ab1-5839-844e-9341dec40f55.mp4",
+      "chunk_start_sec": null,
+      "chunk_end_sec": null,
+      "chunk_duration_sec": 0.0
+    },
+    {
+      "sample_id": "activitynet:TtQPtLPTqBA:seg_0003:chunk_00",
+      "source": "activitynet",
+      "source_video_id": "TtQPtLPTqBA",
+      "segment_id": "seg_0003_chunk_00",
+      "input_video": "data/ActivityNet/videos/TtQPtLPTqBA.mp4",
+      "chunk_start_sec": 117.87,
+      "chunk_end_sec": 122.87,
+      "chunk_duration_sec": 5.0
+    },
+    {
+      "sample_id": "ms:ms-0bea45f8-d7a3-527e-8cda-df17cd830b45",
+      "source": "ms",
+      "source_video_id": "ms-0bea45f8-d7a3-527e-8cda-df17cd830b45",
+      "segment_id": null,
+      "input_video": "data/VidProM/ms_videos/ms_videos_all/ms-0bea45f8-d7a3-527e-8cda-df17cd830b45.mp4",
+      "chunk_start_sec": null,
+      "chunk_end_sec": null,
+      "chunk_duration_sec": 0.0
+    }
+  ]
+}

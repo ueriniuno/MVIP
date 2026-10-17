@@ -1,0 +1,5 @@
+base_config: ../train.yaml
+experiment_name: mvip_ntok8_seed42
+
+vlm:
+  n_soft_tokens: 8

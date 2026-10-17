@@ -1,0 +1,24 @@
+seed: 42
+checkpoint: checkpoints/mvip_step100.pt
+manifest: manifests/eval_138.json
+
+vlm:
+  model_id: Qwen/Qwen2.5-VL-7B-Instruct
+  instruction: Describe this video in detail.
+  num_image_frames: 8
+  max_new_tokens: 256
+
+generator:
+  config_path: external/VideoX-Fun/config/wan2.2/wan_civitai_5b.yaml
+  model_name: external/Wan2.2-Fun-5B-InP
+  sample_size: [704, 1280]
+  fps: 24
+  guidance_scale: 6.0
+  num_inference_steps: 30
+  sampler_name: Flow
+  shift: 5.0
+  gpu_memory_mode: model_full_load   # or model_cpu_offload
+  negative_prompt: "色调艳丽，过曝，静态，细节模糊不清，字幕，风格，作品，画作，画面，静止，整体发灰，最差质量，低质量，JPEG压缩残留，丑陋的，残缺的，多余的手指，画得不好的手部，画得不好的脸部，畸形的，毁容的，形态畸形的肢体，手指融合，静止不动的画面，杂乱的背景，三条腿，背景人很多，倒着走"
+  # Frame count for a user video: ceil(duration*fps) rounded up to 4k+1.
+  user_video_fallback_length: 121
+  user_video_max_length: 369

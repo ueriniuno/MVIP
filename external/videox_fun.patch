@@ -1,0 +1,529 @@
+diff --git a/videox_fun/models/__init__.py b/videox_fun/models/__init__.py
+old mode 100755
+new mode 100644
+index 9381384..41c6f7b
+--- a/videox_fun/models/__init__.py
++++ b/videox_fun/models/__init__.py
+@@ -1,112 +1,213 @@
++import importlib
+ import importlib.util
+ 
+-from diffusers import AutoencoderKL
+-from transformers import (AutoProcessor, AutoTokenizer, CLIPImageProcessor,
+-                          CLIPTextModel, CLIPTokenizer,
+-                          CLIPVisionModelWithProjection,
+-                          Gemma3ForConditionalGeneration, GemmaTokenizer,
+-                          GemmaTokenizerFast, LlamaModel, LlamaTokenizerFast,
+-                          LlavaForConditionalGeneration,
+-                          Mistral3ForConditionalGeneration, PixtralProcessor,
+-                          Qwen3Config, Qwen3ForCausalLM, T5EncoderModel,
+-                          T5Tokenizer, T5TokenizerFast, UMT5EncoderModel,
+-                          Wav2Vec2FeatureExtractor)
+-
+-try:
+-    from transformers import (Qwen2_5_VLConfig,
+-                              Qwen2_5_VLForConditionalGeneration,
+-                              Qwen2Tokenizer, Qwen2VLProcessor)
+-except Exception:
+-    Qwen2_5_VLForConditionalGeneration, Qwen2Tokenizer = None, None
+-    Qwen2VLProcessor, Qwen2_5_VLConfig = None, None
+-    print("Your transformers version is too old to load Qwen2_5_VLForConditionalGeneration and Qwen2Tokenizer. If you wish to use QwenImage, please upgrade your transformers package to the latest version.")
+-
+-try:
+-    from transformers import Qwen3VLForConditionalGeneration
+-except:
+-    Qwen3VLForConditionalGeneration = None
+-    print("Your transformers version is too old to load Qwen3VLForConditionalGeneration. If you wish to use QwenImage, please upgrade your transformers package to the latest version.")
+-
+-from .cogvideox_transformer3d import CogVideoXTransformer3DModel
+-from .cogvideox_vae import AutoencoderKLCogVideoX
+-from .fantasytalking_audio_encoder import FantasyTalkingAudioEncoder
+-from .fantasytalking_transformer3d import FantasyTalkingTransformer3DModel
+-from .flux2_image_processor import Flux2ImageProcessor
+-from .flux2_transformer2d import Flux2Transformer2DModel
+-from .flux2_transformer2d_control import Flux2ControlTransformer2DModel
+-from .flux2_vae import AutoencoderKLFlux2
+-from .flux_transformer2d import FluxTransformer2DModel
+-from .hunyuanvideo_transformer3d import HunyuanVideoTransformer3DModel
+-from .hunyuanvideo_vae import AutoencoderKLHunyuanVideo
+-from .longcatvideo_audio_encoder import (LongCatVideoAudioEncoder,
+-                                         Wav2Vec2ModelWrapper)
+-from .longcatvideo_transformer3d import LongCatVideoTransformer3DModel
+-from .longcatvideo_transformer3d_avatar import \
+-    LongCatVideoAvatarTransformer3DModel
+-from .longcatvideo_vae import AutoencoderKLLongCatVideo
+-from .ltx2_connecter import LTX2TextConnectors
+-from .ltx2_transformer3d import LTX2VideoTransformer3DModel
+-from .ltx2_vae import AutoencoderKLLTX2Video
+-from .ltx2_vae_audio import AutoencoderKLLTX2Audio
+-from .ltx2_vocoder import LTX2Vocoder
+-from .qwenimage_transformer2d import QwenImageTransformer2DModel
+-from .qwenimage_transformer2d_control import QwenImageControlTransformer2DModel
+-from .qwenimage_transformer2d_instantx import QwenImageInstantXControlNetModel
+-from .qwenimage_vae import AutoencoderKLQwenImage
+-from .turbowan_transformer3d import TurboWanTransformer3DModel
+-from .wan_audio_encoder import WanAudioEncoder
+-from .wan_image_encoder import CLIPModel
+-from .wan_text_encoder import WanT5EncoderModel
+-from .wan_transformer3d import (Wan2_2Transformer3DModel, WanRMSNorm,
+-                                WanSelfAttention, WanTransformer3DModel)
+-from .wan_transformer3d_animate import Wan2_2Transformer3DModel_Animate
+-from .wan_transformer3d_s2v import Wan2_2Transformer3DModel_S2V
+-from .wan_transformer3d_vace import VaceWanTransformer3DModel
+-from .wan_vae import AutoencoderKLWan, AutoencoderKLWan_
+-from .wan_vae3_8 import AutoencoderKLWan2_2_, AutoencoderKLWan3_8
+-from .z_image_transformer2d import ZImageTransformer2DModel
+-from .z_image_transformer2d_control import ZImageControlTransformer2DModel
++
++_DIFFUSERS_EXPORTS = {
++    "AutoencoderKL": ("diffusers", "AutoencoderKL"),
++}
++
++_TRANSFORMERS_EXPORTS = {
++    "AutoProcessor": ("transformers", "AutoProcessor"),
++    "AutoTokenizer": ("transformers", "AutoTokenizer"),
++    "CLIPImageProcessor": ("transformers", "CLIPImageProcessor"),
++    "CLIPTextModel": ("transformers", "CLIPTextModel"),
++    "CLIPTokenizer": ("transformers", "CLIPTokenizer"),
++    "CLIPVisionModelWithProjection": ("transformers", "CLIPVisionModelWithProjection"),
++    "Gemma3ForConditionalGeneration": ("transformers", "Gemma3ForConditionalGeneration"),
++    "GemmaTokenizer": ("transformers", "GemmaTokenizer"),
++    "GemmaTokenizerFast": ("transformers", "GemmaTokenizerFast"),
++    "LlamaModel": ("transformers", "LlamaModel"),
++    "LlamaTokenizerFast": ("transformers", "LlamaTokenizerFast"),
++    "LlavaForConditionalGeneration": ("transformers", "LlavaForConditionalGeneration"),
++    "Mistral3ForConditionalGeneration": ("transformers", "Mistral3ForConditionalGeneration"),
++    "PixtralProcessor": ("transformers", "PixtralProcessor"),
++    "Qwen3Config": ("transformers", "Qwen3Config"),
++    "Qwen3ForCausalLM": ("transformers", "Qwen3ForCausalLM"),
++    "T5EncoderModel": ("transformers", "T5EncoderModel"),
++    "T5Tokenizer": ("transformers", "T5Tokenizer"),
++    "T5TokenizerFast": ("transformers", "T5TokenizerFast"),
++    "UMT5EncoderModel": ("transformers", "UMT5EncoderModel"),
++    "Wav2Vec2FeatureExtractor": ("transformers", "Wav2Vec2FeatureExtractor"),
++}
++
++_OPTIONAL_TRANSFORMERS_EXPORTS = {
++    "Qwen2_5_VLConfig": (
++        "transformers",
++        "Qwen2_5_VLConfig",
++        "Your transformers version is too old to load Qwen2_5_VLForConditionalGeneration and Qwen2Tokenizer. If you wish to use QwenImage, please upgrade your transformers package to the latest version.",
++    ),
++    "Qwen2_5_VLForConditionalGeneration": (
++        "transformers",
++        "Qwen2_5_VLForConditionalGeneration",
++        "Your transformers version is too old to load Qwen2_5_VLForConditionalGeneration and Qwen2Tokenizer. If you wish to use QwenImage, please upgrade your transformers package to the latest version.",
++    ),
++    "Qwen2Tokenizer": (
++        "transformers",
++        "Qwen2Tokenizer",
++        "Your transformers version is too old to load Qwen2_5_VLForConditionalGeneration and Qwen2Tokenizer. If you wish to use QwenImage, please upgrade your transformers package to the latest version.",
++    ),
++    "Qwen2VLProcessor": (
++        "transformers",
++        "Qwen2VLProcessor",
++        "Your transformers version is too old to load Qwen2_5_VLForConditionalGeneration and Qwen2Tokenizer. If you wish to use QwenImage, please upgrade your transformers package to the latest version.",
++    ),
++    "Qwen3VLForConditionalGeneration": (
++        "transformers",
++        "Qwen3VLForConditionalGeneration",
++        "Your transformers version is too old to load Qwen3VLForConditionalGeneration. If you wish to use QwenImage, please upgrade your transformers package to the latest version.",
++    ),
++}
++
++_OPTIONAL_AUDIO_EXPORTS = {
++    # These are only needed by audio / speech-to-video pipelines. Keep them
++    # optional so image-to-video generation does not require audio packages.
++    "AutoencoderKLLTX2Audio": (
++        ".ltx2_vae_audio",
++        "AutoencoderKLLTX2Audio",
++        "Optional VideoX-Fun audio model AutoencoderKLLTX2Audio is unavailable.",
++    ),
++    "FantasyTalkingAudioEncoder": (
++        ".fantasytalking_audio_encoder",
++        "FantasyTalkingAudioEncoder",
++        "Optional VideoX-Fun audio model FantasyTalkingAudioEncoder is unavailable.",
++    ),
++    "LTX2Vocoder": (
++        ".ltx2_vocoder",
++        "LTX2Vocoder",
++        "Optional VideoX-Fun audio model LTX2Vocoder is unavailable.",
++    ),
++    "LongCatVideoAudioEncoder": (
++        ".longcatvideo_audio_encoder",
++        "LongCatVideoAudioEncoder",
++        "Optional VideoX-Fun audio model LongCatVideoAudioEncoder is unavailable.",
++    ),
++    "WanAudioEncoder": (
++        ".wan_audio_encoder",
++        "WanAudioEncoder",
++        "Optional VideoX-Fun audio model WanAudioEncoder is unavailable.",
++    ),
++    "Wav2Vec2ModelWrapper": (
++        ".longcatvideo_audio_encoder",
++        "Wav2Vec2ModelWrapper",
++        "Optional VideoX-Fun audio model Wav2Vec2ModelWrapper is unavailable.",
++    ),
++}
++
++_LOCAL_EXPORTS = {
++    "AutoencoderKLCogVideoX": (".cogvideox_vae", "AutoencoderKLCogVideoX"),
++    "AutoencoderKLFlux2": (".flux2_vae", "AutoencoderKLFlux2"),
++    "AutoencoderKLHunyuanVideo": (".hunyuanvideo_vae", "AutoencoderKLHunyuanVideo"),
++    "AutoencoderKLLTX2Video": (".ltx2_vae", "AutoencoderKLLTX2Video"),
++    "AutoencoderKLLongCatVideo": (".longcatvideo_vae", "AutoencoderKLLongCatVideo"),
++    "AutoencoderKLQwenImage": (".qwenimage_vae", "AutoencoderKLQwenImage"),
++    "AutoencoderKLWan": (".wan_vae", "AutoencoderKLWan"),
++    "AutoencoderKLWan2_2_": (".wan_vae3_8", "AutoencoderKLWan2_2_"),
++    "AutoencoderKLWan3_8": (".wan_vae3_8", "AutoencoderKLWan3_8"),
++    "AutoencoderKLWan_": (".wan_vae", "AutoencoderKLWan_"),
++    "CLIPModel": (".wan_image_encoder", "CLIPModel"),
++    "CogVideoXTransformer3DModel": (".cogvideox_transformer3d", "CogVideoXTransformer3DModel"),
++    "FantasyTalkingTransformer3DModel": (".fantasytalking_transformer3d", "FantasyTalkingTransformer3DModel"),
++    "Flux2ControlTransformer2DModel": (".flux2_transformer2d_control", "Flux2ControlTransformer2DModel"),
++    "Flux2ImageProcessor": (".flux2_image_processor", "Flux2ImageProcessor"),
++    "Flux2Transformer2DModel": (".flux2_transformer2d", "Flux2Transformer2DModel"),
++    "FluxTransformer2DModel": (".flux_transformer2d", "FluxTransformer2DModel"),
++    "HunyuanVideoTransformer3DModel": (".hunyuanvideo_transformer3d", "HunyuanVideoTransformer3DModel"),
++    "LTX2TextConnectors": (".ltx2_connecter", "LTX2TextConnectors"),
++    "LTX2VideoTransformer3DModel": (".ltx2_transformer3d", "LTX2VideoTransformer3DModel"),
++    "LongCatVideoAvatarTransformer3DModel": (
++        ".longcatvideo_transformer3d_avatar",
++        "LongCatVideoAvatarTransformer3DModel",
++    ),
++    "LongCatVideoTransformer3DModel": (".longcatvideo_transformer3d", "LongCatVideoTransformer3DModel"),
++    "QwenImageControlTransformer2DModel": (
++        ".qwenimage_transformer2d_control",
++        "QwenImageControlTransformer2DModel",
++    ),
++    "QwenImageInstantXControlNetModel": (
++        ".qwenimage_transformer2d_instantx",
++        "QwenImageInstantXControlNetModel",
++    ),
++    "QwenImageTransformer2DModel": (".qwenimage_transformer2d", "QwenImageTransformer2DModel"),
++    "TurboWanTransformer3DModel": (".turbowan_transformer3d", "TurboWanTransformer3DModel"),
++    "VaceWanTransformer3DModel": (".wan_transformer3d_vace", "VaceWanTransformer3DModel"),
++    "Wan2_2Transformer3DModel": (".wan_transformer3d", "Wan2_2Transformer3DModel"),
++    "Wan2_2Transformer3DModel_Animate": (".wan_transformer3d_animate", "Wan2_2Transformer3DModel_Animate"),
++    "Wan2_2Transformer3DModel_S2V": (".wan_transformer3d_s2v", "Wan2_2Transformer3DModel_S2V"),
++    "WanRMSNorm": (".wan_transformer3d", "WanRMSNorm"),
++    "WanSelfAttention": (".wan_transformer3d", "WanSelfAttention"),
++    "WanT5EncoderModel": (".wan_text_encoder", "WanT5EncoderModel"),
++    "WanTransformer3DModel": (".wan_transformer3d", "WanTransformer3DModel"),
++    "ZImageControlTransformer2DModel": (".z_image_transformer2d_control", "ZImageControlTransformer2DModel"),
++    "ZImageTransformer2DModel": (".z_image_transformer2d", "ZImageTransformer2DModel"),
++}
++
++_EXPORTS = {
++    **_DIFFUSERS_EXPORTS,
++    **_TRANSFORMERS_EXPORTS,
++    **_OPTIONAL_TRANSFORMERS_EXPORTS,
++    **_OPTIONAL_AUDIO_EXPORTS,
++    **_LOCAL_EXPORTS,
++}
++
++__all__ = sorted(_EXPORTS)
++
++
++def _load(name):
++    if name not in _EXPORTS:
++        raise AttributeError(f"module {__name__!r} has no attribute {name!r}")
++
++    module_name, attr_name, *message = _EXPORTS[name]
++    try:
++        module = importlib.import_module(module_name, __name__)
++        value = getattr(module, attr_name)
++    except Exception:
++        if message:
++            print(message[0])
++            value = None
++        else:
++            raise
++    globals()[name] = value
++    return value
++
++
++def __getattr__(name):
++    return _load(name)
++
+ 
+ # The pai_fuser is an internally developed acceleration package, which can be used on PAI.
+ if importlib.util.find_spec("paifuser") is not None:
+-    # --------------------------------------------------------------- #
+-    #   The simple_wrapper is used to solve the problem 
+-    #   about conflicts between cython and torch.compile
+-    # --------------------------------------------------------------- #
++    AutoencoderKLWan_ = _load("AutoencoderKLWan_")
++    AutoencoderKLWan2_2_ = _load("AutoencoderKLWan2_2_")
++    QwenImageTransformer2DModel = _load("QwenImageTransformer2DModel")
++    WanRMSNorm = _load("WanRMSNorm")
++    WanSelfAttention = _load("WanSelfAttention")
++    WanTransformer3DModel = _load("WanTransformer3DModel")
++
+     def simple_wrapper(func):
+         def inner(*args, **kwargs):
+             return func(*args, **kwargs)
++
+         return inner
+ 
+-    # --------------------------------------------------------------- #
+-    #   VAE Parallel Kernel
+-    # --------------------------------------------------------------- #
+     from ..dist import parallel_magvit_vae
++
+     AutoencoderKLWan_.decode = simple_wrapper(parallel_magvit_vae(0.4, 8)(AutoencoderKLWan_.decode))
+     AutoencoderKLWan2_2_.decode = simple_wrapper(parallel_magvit_vae(0.4, 16)(AutoencoderKLWan2_2_.decode))
+ 
+-    # --------------------------------------------------------------- #
+-    #   Sparse Attention
+-    # --------------------------------------------------------------- #
+     import torch
+     from paifuser.ops import wan_sparse_attention_wrapper
+-    
++
+     WanSelfAttention.forward = simple_wrapper(wan_sparse_attention_wrapper()(WanSelfAttention.forward))
+     print("Import Sparse Attention")
+ 
+     WanTransformer3DModel.forward = simple_wrapper(WanTransformer3DModel.forward)
+ 
+-    # --------------------------------------------------------------- #
+-    #   CFG Skip Turbo
+-    # --------------------------------------------------------------- #
+     import os
+ 
+     if importlib.util.find_spec("paifuser.accelerator") is not None:
+-        from paifuser.accelerator import (cfg_skip_turbo, disable_cfg_skip,
+-                                          enable_cfg_skip, share_cfg_skip)
++        from paifuser.accelerator import cfg_skip_turbo, disable_cfg_skip, enable_cfg_skip, share_cfg_skip
+     else:
+-        from paifuser import (cfg_skip_turbo, disable_cfg_skip,
+-                              enable_cfg_skip, share_cfg_skip)
++        from paifuser import cfg_skip_turbo, disable_cfg_skip, enable_cfg_skip, share_cfg_skip
+ 
+     WanTransformer3DModel.enable_cfg_skip = enable_cfg_skip()(WanTransformer3DModel.enable_cfg_skip)
+     WanTransformer3DModel.disable_cfg_skip = disable_cfg_skip()(WanTransformer3DModel.disable_cfg_skip)
+@@ -116,39 +217,40 @@ if importlib.util.find_spec("paifuser") is not None:
+     QwenImageTransformer2DModel.disable_cfg_skip = disable_cfg_skip()(QwenImageTransformer2DModel.disable_cfg_skip)
+     print("Import CFG Skip Turbo")
+ 
+-    # --------------------------------------------------------------- #
+-    #   RMS Norm Kernel
+-    # --------------------------------------------------------------- #
+     from paifuser.ops import rms_norm_forward
++
+     WanRMSNorm.forward = rms_norm_forward
+     print("Import PAI RMS Fuse")
+ 
+-    # --------------------------------------------------------------- #
+-    #   Fast Rope Kernel
+-    # --------------------------------------------------------------- #
+     import types
+ 
+-    import torch
+-    from paifuser.ops import (ENABLE_KERNEL, fast_rope_apply_qk,
+-                              rope_apply_real_qk)
++    from paifuser.ops import ENABLE_KERNEL, fast_rope_apply_qk, rope_apply_real_qk
+ 
+     from . import wan_transformer3d
+ 
+     def deepcopy_function(f):
+-        return types.FunctionType(f.__code__, f.__globals__, name=f.__name__, argdefs=f.__defaults__,closure=f.__closure__)
++        return types.FunctionType(
++            f.__code__,
++            f.__globals__,
++            name=f.__name__,
++            argdefs=f.__defaults__,
++            closure=f.__closure__,
++        )
+ 
+     local_rope_apply_qk = deepcopy_function(wan_transformer3d.rope_apply_qk)
+ 
+     if ENABLE_KERNEL:
++
+         def adaptive_fast_rope_apply_qk(q, k, grid_sizes, freqs):
+             if torch.is_grad_enabled():
+                 return local_rope_apply_qk(q, k, grid_sizes, freqs)
+-            else:
+-                return fast_rope_apply_qk(q, k, grid_sizes, freqs)
++            return fast_rope_apply_qk(q, k, grid_sizes, freqs)
++
+     else:
++
+         def adaptive_fast_rope_apply_qk(q, k, grid_sizes, freqs):
+             return rope_apply_real_qk(q, k, grid_sizes, freqs)
+-            
++
+     wan_transformer3d.rope_apply_qk = adaptive_fast_rope_apply_qk
+     rope_apply_qk = adaptive_fast_rope_apply_qk
+-    print("Import PAI Fast rope")
+\ No newline at end of file
++    print("Import PAI Fast rope")
+diff --git a/videox_fun/pipeline/__init__.py b/videox_fun/pipeline/__init__.py
+old mode 100755
+new mode 100644
+index 8c3edd5..3244209
+--- a/videox_fun/pipeline/__init__.py
++++ b/videox_fun/pipeline/__init__.py
+@@ -1,69 +1,100 @@
+-from .pipeline_cogvideox_fun import CogVideoXFunPipeline
+-from .pipeline_cogvideox_fun_control import CogVideoXFunControlPipeline
+-from .pipeline_cogvideox_fun_inpaint import CogVideoXFunInpaintPipeline
+-from .pipeline_fantasy_talking import FantasyTalkingPipeline
+-from .pipeline_flux import FluxPipeline
+-from .pipeline_flux2 import Flux2Pipeline
+-from .pipeline_flux2_control import Flux2ControlPipeline
+-from .pipeline_hunyuanvideo import HunyuanVideoPipeline
+-from .pipeline_hunyuanvideo_i2v import HunyuanVideoI2VPipeline
+-from .pipeline_longcatvideo import LongCatVideoPipeline
+-from .pipeline_longcatvideo_avatar import LongCatVideoAvatarPipeline
+-from .pipeline_ltx2_i2v import LTX2I2VPipeline
+-from .pipeline_ltx2 import LTX2Pipeline
+-from .pipeline_qwenimage import QwenImagePipeline
+-from .pipeline_qwenimage_control import QwenImageControlPipeline
+-from .pipeline_qwenimage_instantx import QwenImageControlNetPipeline
+-from .pipeline_qwenimage_edit import QwenImageEditPipeline
+-from .pipeline_qwenimage_edit_plus import QwenImageEditPlusPipeline
+-from .pipeline_qwenimage_layered import QwenImageLayeredPipeline
+-from .pipeline_wan import WanPipeline
+-from .pipeline_wan2_2 import Wan2_2Pipeline
+-from .pipeline_wan2_2_animate import Wan2_2AnimatePipeline
+-from .pipeline_wan2_2_fun_control import Wan2_2FunControlPipeline
+-from .pipeline_wan2_2_fun_inpaint import Wan2_2FunInpaintPipeline
+-from .pipeline_wan2_2_s2v import Wan2_2S2VPipeline
+-from .pipeline_wan2_2_ti2v import Wan2_2TI2VPipeline
+-from .pipeline_wan2_2_vace_fun import Wan2_2VaceFunPipeline
+-from .pipeline_wan_fun_control import WanFunControlPipeline
+-from .pipeline_wan_fun_inpaint import WanFunInpaintPipeline
+-from .pipeline_wan_phantom import WanFunPhantomPipeline
+-from .pipeline_wan_vace import WanVacePipeline
+-from .pipeline_z_image import ZImagePipeline
+-from .pipeline_z_image_control import ZImageControlPipeline
++import importlib
++import importlib.util
+ 
+-WanFunPipeline = WanPipeline
+-WanI2VPipeline = WanFunInpaintPipeline
+ 
+-Wan2_2FunPipeline = Wan2_2Pipeline
+-Wan2_2I2VPipeline = Wan2_2FunInpaintPipeline
++_PIPELINE_EXPORTS = {
++    "CogVideoXFunControlPipeline": (".pipeline_cogvideox_fun_control", "CogVideoXFunControlPipeline"),
++    "CogVideoXFunInpaintPipeline": (".pipeline_cogvideox_fun_inpaint", "CogVideoXFunInpaintPipeline"),
++    "CogVideoXFunPipeline": (".pipeline_cogvideox_fun", "CogVideoXFunPipeline"),
++    "FantasyTalkingPipeline": (".pipeline_fantasy_talking", "FantasyTalkingPipeline"),
++    "Flux2ControlPipeline": (".pipeline_flux2_control", "Flux2ControlPipeline"),
++    "Flux2Pipeline": (".pipeline_flux2", "Flux2Pipeline"),
++    "FluxPipeline": (".pipeline_flux", "FluxPipeline"),
++    "HunyuanVideoI2VPipeline": (".pipeline_hunyuanvideo_i2v", "HunyuanVideoI2VPipeline"),
++    "HunyuanVideoPipeline": (".pipeline_hunyuanvideo", "HunyuanVideoPipeline"),
++    "LTX2I2VPipeline": (".pipeline_ltx2_i2v", "LTX2I2VPipeline"),
++    "LTX2Pipeline": (".pipeline_ltx2", "LTX2Pipeline"),
++    "LongCatVideoAvatarPipeline": (".pipeline_longcatvideo_avatar", "LongCatVideoAvatarPipeline"),
++    "LongCatVideoPipeline": (".pipeline_longcatvideo", "LongCatVideoPipeline"),
++    "QwenImageControlNetPipeline": (".pipeline_qwenimage_instantx", "QwenImageControlNetPipeline"),
++    "QwenImageControlPipeline": (".pipeline_qwenimage_control", "QwenImageControlPipeline"),
++    "QwenImageEditPipeline": (".pipeline_qwenimage_edit", "QwenImageEditPipeline"),
++    "QwenImageEditPlusPipeline": (".pipeline_qwenimage_edit_plus", "QwenImageEditPlusPipeline"),
++    "QwenImageLayeredPipeline": (".pipeline_qwenimage_layered", "QwenImageLayeredPipeline"),
++    "QwenImagePipeline": (".pipeline_qwenimage", "QwenImagePipeline"),
++    "Wan2_2AnimatePipeline": (".pipeline_wan2_2_animate", "Wan2_2AnimatePipeline"),
++    "Wan2_2FunControlPipeline": (".pipeline_wan2_2_fun_control", "Wan2_2FunControlPipeline"),
++    "Wan2_2FunInpaintPipeline": (".pipeline_wan2_2_fun_inpaint", "Wan2_2FunInpaintPipeline"),
++    "Wan2_2Pipeline": (".pipeline_wan2_2", "Wan2_2Pipeline"),
++    "Wan2_2S2VPipeline": (".pipeline_wan2_2_s2v", "Wan2_2S2VPipeline"),
++    "Wan2_2TI2VPipeline": (".pipeline_wan2_2_ti2v", "Wan2_2TI2VPipeline"),
++    "Wan2_2VaceFunPipeline": (".pipeline_wan2_2_vace_fun", "Wan2_2VaceFunPipeline"),
++    "WanFunControlPipeline": (".pipeline_wan_fun_control", "WanFunControlPipeline"),
++    "WanFunInpaintPipeline": (".pipeline_wan_fun_inpaint", "WanFunInpaintPipeline"),
++    "WanFunPhantomPipeline": (".pipeline_wan_phantom", "WanFunPhantomPipeline"),
++    "WanPipeline": (".pipeline_wan", "WanPipeline"),
++    "WanVacePipeline": (".pipeline_wan_vace", "WanVacePipeline"),
++    "ZImageControlPipeline": (".pipeline_z_image_control", "ZImageControlPipeline"),
++    "ZImagePipeline": (".pipeline_z_image", "ZImagePipeline"),
++}
+ 
+-import importlib.util
++_ALIASES = {
++    "Wan2_2FunPipeline": "Wan2_2Pipeline",
++    "Wan2_2I2VPipeline": "Wan2_2FunInpaintPipeline",
++    "WanFunPipeline": "WanPipeline",
++    "WanI2VPipeline": "WanFunInpaintPipeline",
++}
++
++_SPARSE_RESET_TARGETS = {
++    "Wan2_2AnimatePipeline",
++    "Wan2_2FunControlPipeline",
++    "Wan2_2FunInpaintPipeline",
++    "Wan2_2I2VPipeline",
++    "Wan2_2FunPipeline",
++    "Wan2_2Pipeline",
++    "Wan2_2S2VPipeline",
++    "Wan2_2TI2VPipeline",
++    "Wan2_2VaceFunPipeline",
++    "WanFunControlPipeline",
++    "WanFunInpaintPipeline",
++    "WanFunPhantomPipeline",
++    "WanFunPipeline",
++    "WanI2VPipeline",
++    "WanPipeline",
++    "WanVacePipeline",
++}
++
++_SPARSE_PATCHED_CLASSES = set()
++
++__all__ = sorted([*_PIPELINE_EXPORTS, *_ALIASES])
++
++
++def _maybe_sparse_reset(name, value):
++    if name not in _SPARSE_RESET_TARGETS or importlib.util.find_spec("paifuser") is None:
++        return value
++    if value in _SPARSE_PATCHED_CLASSES:
++        return value
+ 
+-if importlib.util.find_spec("paifuser") is not None:
+-    # --------------------------------------------------------------- #
+-    #   Sparse Attention
+-    # --------------------------------------------------------------- #
+     from paifuser.ops import sparse_reset
+ 
+-    # Wan2.1
+-    WanFunInpaintPipeline.__call__ = sparse_reset(WanFunInpaintPipeline.__call__)
+-    WanFunPipeline.__call__ = sparse_reset(WanFunPipeline.__call__)
+-    WanFunControlPipeline.__call__ = sparse_reset(WanFunControlPipeline.__call__)
+-    WanI2VPipeline.__call__ = sparse_reset(WanI2VPipeline.__call__)
+-    WanPipeline.__call__ = sparse_reset(WanPipeline.__call__)
+-    WanVacePipeline.__call__ = sparse_reset(WanVacePipeline.__call__)
++    value.__call__ = sparse_reset(value.__call__)
++    _SPARSE_PATCHED_CLASSES.add(value)
++    return value
++
++
++def __getattr__(name):
++    if name in _ALIASES:
++        value = __getattr__(_ALIASES[name])
++        value = _maybe_sparse_reset(name, value)
++        globals()[name] = value
++        return value
+ 
+-    # Phantom
+-    WanFunPhantomPipeline.__call__ = sparse_reset(WanFunPhantomPipeline.__call__)
++    if name not in _PIPELINE_EXPORTS:
++        raise AttributeError(f"module {__name__!r} has no attribute {name!r}")
+ 
+-    # Wan2.2
+-    Wan2_2FunInpaintPipeline.__call__ = sparse_reset(Wan2_2FunInpaintPipeline.__call__)
+-    Wan2_2FunPipeline.__call__ = sparse_reset(Wan2_2FunPipeline.__call__)
+-    Wan2_2FunControlPipeline.__call__ = sparse_reset(Wan2_2FunControlPipeline.__call__)
+-    Wan2_2Pipeline.__call__ = sparse_reset(Wan2_2Pipeline.__call__)
+-    Wan2_2I2VPipeline.__call__ = sparse_reset(Wan2_2I2VPipeline.__call__)
+-    Wan2_2TI2VPipeline.__call__ = sparse_reset(Wan2_2TI2VPipeline.__call__)
+-    Wan2_2S2VPipeline.__call__ = sparse_reset(Wan2_2S2VPipeline.__call__)
+-    Wan2_2VaceFunPipeline.__call__ = sparse_reset(Wan2_2VaceFunPipeline.__call__)
+-    Wan2_2AnimatePipeline.__call__ = sparse_reset(Wan2_2AnimatePipeline.__call__)
+\ No newline at end of file
++    module_name, attr_name = _PIPELINE_EXPORTS[name]
++    module = importlib.import_module(module_name, __name__)
++    value = getattr(module, attr_name)
++    value = _maybe_sparse_reset(name, value)
++    globals()[name] = value
++    return value

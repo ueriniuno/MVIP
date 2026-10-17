@@ -1,0 +1,5 @@
+base_config: ../train.yaml
+experiment_name: mvip_k3_seed42
+
+optimization:
+  inner_steps: 3
